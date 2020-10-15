@@ -1,0 +1,26 @@
+#######################################
+# Syntax Coloring Map For Arduino WiFi
+#######################################
+
+#######################################
+# Class (KEYWORD3)
+#######################################
+
+Ciao	KEYWORD3
+CiaoData	KEYWORD3
+Wifi	KEYWORD3
+WifiData	KEYWORD3
+UnoWiFiDevEd	KEYWORD3
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+client	KEYWORD2
+read	KEYWORD2
+write	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+DELIMITER	LITERAL1
+EOL	LITERAL1
