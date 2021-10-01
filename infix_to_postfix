@@ -1,0 +1,44 @@
+#code here
+def infixtopostfix(inp):
+    stack=[]
+    priority = {'^':4,'/':3,'*':3,'+':2,'-':2,'(':1,')':1}
+    ans=''
+    for elem in inp:
+        if(elem not in priority.keys()):
+            ans+=str(elem)
+        else:
+            if(elem==')'):
+                while(stack!=None):
+                    popped=stack.pop()
+                    if(popped=='('):
+                        break
+                    else: ans+=str(popped)
+            elif(elem=='('):
+                stack.append(elem)
+            else:
+                while(stack and stack[-1]!='(' and priority[stack[-1]]>=priority[elem] ):
+                    ans+=stack.pop()
+                stack.append(elem)
+    while(stack):
+        ans+=stack.pop()
+    return ans
+def help(ex):
+    d={}
+    d['+']=1
+    d['-']=1
+    d['/']=2
+    d['*']=2
+    ans=""
+    st=[]
+    for i in range(len(ex)):
+        if(ex[i].isdigit()):
+            ans+=str(ex[i])
+        else:
+            while(st!=[] and d[st[-1]]>=d[ex[i]]):
+                ans+=str(st.pop())
+            st.append(ex[i])
+    while(st!=[]):
+        ans+=str(st.pop())
+    return ans
+print(help('1234-*+56+-'))
+print(infixtopostfix('1234-*+56+-'))
