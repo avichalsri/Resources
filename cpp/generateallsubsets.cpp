@@ -1,6 +1,11 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+//Given an integer array, generate all possible subsets of that array
+//Example: Array: {1,2,3}
+/*
+Output:
+{},{1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}
+*/
 vector<vector<int>> subsets;
 //Recursive fucntion to generate all subsets. Time complexity: 2^n(2 to the power n)
 void gensubset(vector<int> &v, int i, vector<int> &temp)
