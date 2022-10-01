@@ -1,3 +1,27 @@
+/*
+
+
+Problem Statement : Given t number of testcases, for each testcase, you are given a string s, now tell whether
+this string contains all unique characters or some characters are repeated in it. If string contains unique characters 
+print "True, String contains distinct characters only", else print "False, String do not contain distinct characters".
+
+For Example -> 
+Input:- 
+4
+abcde
+abbd
+yaaaa
+cab$@
+
+Output:- 
+True, String contains distinct characters only
+False, String do not contain distinct characters
+False, String do not contain distinct characters
+True, String contains distinct characters only
+
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
