@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+
+public class largestnumberpossible {
+    public static void main(String[] args) {
+        ArrayList<Integer> list=new ArrayList<>();
+        list.add(31);
+        list.add(30);
+        list.add(34);
+        list.add(51);
+        list.add(92);
+       
+        int[] ans=new int[]{31,30,34,51,92};
+        
+       int max=ans[0];
+        for (int i =  ans.length-1; i>=0; i--) {
+           max=max*10+ans[i];
+        }
+        System.out.println(max);
+    }
+}
