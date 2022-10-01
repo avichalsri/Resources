@@ -1,3 +1,22 @@
+/* Finding the Kth smallest element in the given array.
+
+Sample Example:
+Enter number of test cases
+1
+Enter number of elements
+5
+Enter the elements
+1
+3
+2
+5
+4
+Enter the Kth element
+3
+The Kth smallest element is
+3
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
