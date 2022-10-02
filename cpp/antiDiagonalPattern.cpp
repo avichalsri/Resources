@@ -1,6 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Problem Statement :  You are given a  square matrix of size N*N, return an array of its anti-diagonals. 
+//Example1 : matrix[][] = {{1,2,3},
+//			{4,5,6},
+//			{7,8,9}}
+// Solution :  For the Above Matrix Anti-Diagonal Pattern is : 1,2,4,3,5,7,6,8,9
+//Example2 : matrix[] = {{1,2},
+//			{4,5}}
+ //  Solution :        For the Above Matrix Anti-Diagonal Pattern is : 1,2,4,5
+
 
 vector<int> antiDiagonalPattern(vector<vector<int>>&matrix) 
     {
