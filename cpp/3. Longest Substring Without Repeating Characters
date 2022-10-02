@@ -1,0 +1,37 @@
+Problem Statement :- https://leetcode.com/problems/longest-substring-without-repeating-characters/
+/*
+Example:- 
+
+
+Input: s = "abcabcbb"
+Output: 3
+Explanation: The answer is "abc", with the length of 3.
+
+
+Input: s = "bbbbb"
+Output: 1
+Explanation: The answer is "b", with the length of 1.
+
+
+
+*/
+
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        vector<int>mp(256,-1);
+        int l,r;
+        l = r = 0;
+        int n = s.size();
+        int maks = 0;
+        while(r<n){
+            if(mp[s[r]] != -1)
+                l = max(l, mp[s[r]]+1);
+            mp[s[r]] = r;
+            maks = max(maks, r-l+1);
+            r++;
+        }
+        return maks;
+        
+    }
+};

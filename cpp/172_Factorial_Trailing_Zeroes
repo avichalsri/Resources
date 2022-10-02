@@ -1,0 +1,14 @@
+// leetcode question link : https://leetcode.com/problems/factorial-trailing-zeroes/
+
+class Solution {
+public:
+    int trailingZeroes(int n) {
+       // a variable is help to counting the multiples of 5 to check trailing zeroes
+        int a = 5,ans = 0;
+        while(n/a>0){
+            ans = ans + n/a;
+            a=a*5;
+        }
+        return ans;
+    }
+};
