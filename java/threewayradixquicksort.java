@@ -1,4 +1,10 @@
 // Java program for 3-Way Radix Quicksort
+/*
+Problem Statement :- Sort a given set of strings using threee way radix quick sort
+for eg :- set_of_string = { "some", "same", "hero", "make", "zero" }
+output :- sorted_string = { "hero", "make", "same", "some", "zero" }
+*/
+
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
